@@ -7,7 +7,44 @@
     <title>AI Recipe Generator</title>
   </head>
   <body>
-<h1> AI Recipe Generator</h1>
+    <div class="container">
+      <header>
+        <h1>Welcome To The AI Recipe Generator</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Enter ingredients (e.g., chicken, rice, tomatoes)"
+              class="instructions"
+              id="user-input"
+              autofocus
+              required
+              autocomplete="off"
+            />
+            <input type="submit" class="submit-button" value="Generate Recipe" />
+          </form>
+          <i class="hint">Example: Chicken, Rice, Tomatoes, etc.</i>
+        </div>
+
+        <div class="swiper-container hidden" id="loading-carousel">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="recipe hidden" id="recipe"></div>
+      </main>
 <footer>
   This AI project was coded by
         <a href="https://github.com/Ntombifuthi-Mashinini" target="_blank"

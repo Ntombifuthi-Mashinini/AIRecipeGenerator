@@ -41,7 +41,7 @@ const swiper = new Swiper(".swiper-container", {
       showRecipe.classList.remove("hidden");
       getRecipe(response);
     });
+    
   }
-  
   let recipeForm = document.querySelector("#recipe-generator-form");
   recipeForm.addEventListener("submit", generateRecipe);
